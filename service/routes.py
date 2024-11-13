@@ -100,9 +100,11 @@ def check_content_type(media_type):
         status.HTTP_415_UNSUPPORTED_MEDIA_TYPE,
         f"Content-Type must be {media_type}",
     )
-    ######################################################################
-    # READ AN ACCOUNT
-    ######################################################################
+
+
+######################################################################
+# READ AN ACCOUNT
+######################################################################
 @app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
     """
