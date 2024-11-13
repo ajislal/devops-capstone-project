@@ -118,5 +118,5 @@ def get_accounts(account_id):
         return account.serialize(), status.HTTP_200_OK
 def test_get_account_not_found(self):
         """It should not Read an Account that is not found"""
-        resp = self.client.delete(BASE_URL)
+        resp = self.client.get(BASE_URL)
         self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
