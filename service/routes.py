@@ -103,7 +103,7 @@ def check_content_type(media_type):
     ######################################################################
     # READ AN ACCOUNT
     ######################################################################
-    @app.route("/accounts/<int:account_id>", methods=["GET"])
+@app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
     """
     Reads an Account
