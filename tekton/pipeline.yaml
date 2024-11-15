@@ -64,8 +64,8 @@ spec:
         value: "-v --with-spec --spec-color"
       runAfter:
         - clone
-    - name: build-image
-      - name: build
+
+    - name: build
       workspaces:
         - name: source
           workspace: pipeline-workspace
@@ -78,5 +78,4 @@ spec:
       runAfter:
         - tests
         - lint
-
     
